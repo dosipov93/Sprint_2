@@ -1,10 +1,8 @@
 class Results:
-# напиши свой код здесь
     def __init__(self, victories, draws, losses):
         self.victories = victories
         self.draws = draws
         self.losses = losses
-
 
 class Football(Results):
     def __init__(self, victories, draws, losses):
@@ -22,12 +20,10 @@ class Football(Results):
     def total_points(self):
         return f"\nОбщее количество очков: {3 * self.victories + self.draws}"
     
-
 class Hockey(Results):
     def __init__(self, victories, draws, losses):
         super().__init__(victories, draws, losses)
 
-    
     def number_of_wins(self):
         return f"\nХоккейных побед: {self.victories}"
     
