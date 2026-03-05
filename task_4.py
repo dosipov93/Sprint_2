@@ -1,5 +1,4 @@
 class EmployeeSalary:
-    # напиши свой код здесь
     hourly_payment = 400
     
     def __init__(self, name, hours, rest_days, email):
