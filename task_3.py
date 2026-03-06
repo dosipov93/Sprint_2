@@ -17,7 +17,7 @@ class PointsForMeters:
         if meters < 0:
             print('Количество метров не может быть отрицательным')
         else:
-            points += meters *0.5
+            points = meters * 0.5
         return points
     
 class TotalPoints(PointsForPlace, PointsForMeters):
